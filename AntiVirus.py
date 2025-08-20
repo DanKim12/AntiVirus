@@ -177,7 +177,6 @@ def open_file_dialog():
 
 search_btn = tk.Button(
     search_frame,
-    text="🔍",
     font=("Segoe UI", 18),
     fg="#00FF7F",
     bg="#1E2D3B",
@@ -225,6 +224,7 @@ def on_search_var_change(*args):
         status_label.pack_forget()
 
 search_var.trace_add("write", on_search_var_change)
+
 
 def on_custom_scan_click():
     if search_frame.winfo_ismapped():
